@@ -5,10 +5,13 @@
         <meta charset="utf-8" />
         <title>Hello, World!</title>
         <body>
+            <input type="text" id="userName" placeholder="Enter your name" />
             <button onclick="showAlert()">Click</button>
+
             <script lang="javascript" type="text/javascript">
                 function showAlert(){
-                    alert("Hello, World")
+                    var name = document.getElementById("userName").value;
+                    alert("Hello," + name + "!");
                 }
             </script>
         </body>
